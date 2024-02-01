@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Comfortaa';
+    cursor: url("img/pointer_1315\ \(1\).png"), auto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eff6ff;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    padding: 10px;
+    background-color: #fff;
+    width: 71%;
+    border-radius: 1.5em;
+    display: flex;
+    top: 2em;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 3px 100px 0 #375bb6;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000;
+}
+
+header a, nav, div {
+    margin-left: 2em;
+}
+
+header img {
+    width: 3em;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    margin-left: 1em;
+}
+
+header nav ul li a {
+    position: relative;
+    font-size: 1em;
+    color: #375bb6;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header nav ul li a i {
+    position: relative;
+    left: 3px;
+    align-items: center;
+}
+
+header nav ul li a::after {
+    position: absolute;
+    background-color: #375bb6;
+    content: '';
+    width: 0;
+    height: 2px;
+    left: 0;
+    top: 1.5em;
+    transition: 300ms all;
+}
+
+header > nav > ul > li > a:hover::after {
+    width: 100%;
+}
+
+header div input{
+    position: relative;
+    font-size: .9em;
+    width: 5em;
+    transition: 300ms all;
+    height: 4vh;
+    border: none;
+    outline: none;
+    margin-left: 2em;
+}
+
+header div input:hover::placeholder {
+    color: #375bb6;
+}
+
+header div input:focus {
+    width: 8em;
+}
+
+
+header div button {
+    border: none;
+    background: transparent;
+}
+
+header div button i {
+    font-size: 1.1em;
+    cursor: pointer;
+    color: #375bb6;
+}
+
+/* SUBMENU -- Consolas */
+
+.submenu {
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+    top: 110%;
+    height: 0;
+    right: 0;
+    border-radius: 2vw; 
+    overflow: hidden;
+    transition: 300ms all;
+}
+
+.submenu li {
+    display: flex;
+    align-items: center;
+    width: 30vw; 
+    height: 30vh;
+    margin: 0;
+    border-left: 1px solid #375bb6;
+    border-radius: 2vw; 
+    transition: 300ms all;
+}
+
+.submenu li:hover {
+    background-color: #95b1db;
+}
+
+.submenu li a { 
+    display: grid;
+    margin: 0 auto;
+}
+
+.submenu li a img {
+    width: 80%;
+    margin: 0 auto;
+    height: 15vh;
+}
+
+.submenu li a span {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+}
+
+header ul li a:first-child:focus ~ .submenu {
+    height: 30vh;
+}
+
+/* --------------MAIN - SECTION --------------------*/
+
+main {
+    width: 100%;
+    height: 100vh;
+    position: static;
+    margin: 0;
+    padding: 0;
+
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #182138ef;
+    border-radius: 40px;
+    top: 7rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.banner-info {
+    width: 50%;
+    height: auto;
+    display: block;
+
+}
+
+.banner-info h2{
+    color: #fff;
+}
+
+.banner-info p {
+    color: #ffffff;
+    font-size: 12px;
+    width: 100%;
+}
+
+.banner-info h2 span {
+    color: #fcfcff;
+}
+
+.banner-info button {
+    position: relative;
+    background-color: transparent;
+    font-weight: 900;
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.banner-info button::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 100%;
+    height: 0px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 300ms all;
+}
+
+.banner-info button:hover::before {
+    height: 100%;
+}
+
+.banner-info button:hover {
+    color:#375bb6;
+}
+
+.banner-img img{
+    width: 350px;
+}
+
+.container-cards {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    top: 8em;
+    border-radius: 40px;
+    box-shadow: 0 3px 100px 0 #8899af;
+}
+
+.container-cards > h2 {
+    position: relative;
+    top: .5em;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #000;
+}
+
+.cards {
+    position: relative;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    margin: 10px auto;
+    width: 33vh;
+    height: 40vh;
+    cursor: pointer;
+    border-radius: 2em;
+    overflow: hidden;
+    transition: 300ms all;
+}
+
+.card h3 {
+    position: absolute;
+    font-size: 1.1em;
+    bottom: 0;
+    color: #ffffff;
+    display: flex;
+    margin: 1.5em;
+}
+
+.card-info {
+    position: relative;
+    background: #fafafa10;
+    backdrop-filter: blur(1em);
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    visibility: hidden;
+    margin: 0;
+    border-radius: 2em;
+    padding: 30px;
+    transition: 500ms all;
+}
+
+.card-info h2 {
+    font-size: 1.2em;
+    color: #fff;
+    margin: -7px;
+}
+
+.card-info > p{
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1em;
+    color: #fff;
+}
+
+
+.card-info-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    position: absolute;
+    bottom: 5px;
+}
+
+.card-info-date p {
+    color: #fff;
+}
+
+.card:hover .card-info{
+    position: relative;
+    visibility: visible;
+    left: 0;
+}
+
+
+@media screen and (max-width:1525px) {
+    header, .banner, .container-cards {
+        width: 90%;
+    }
+}
