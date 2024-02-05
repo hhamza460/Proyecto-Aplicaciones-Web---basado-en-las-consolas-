@@ -9,10 +9,10 @@
     <title>ConsolasExpress</title>
 </head>
 <body class="background">
-    <header>
-        <a href="#"><img src="img/icon.png" alt="ConsolasExpress"></a>
-        <nav>
-            <ul>
+    <header class="main-header">
+        <a href="#" class="logo-link"><img src="img/icon.png" alt="ConsolasExpress"></a>
+        <nav class="main-nav">
+            <ul class="nav-list">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#">Consolas<i class="fa-solid fa-chevron-down"></i></a>
                     <ul class="submenu">
@@ -27,28 +27,28 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="search-bar">
             <input type="text" placeholder="Buscar...">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
     </header>
-    <main>
-        <div class="banner">
-            <div class="banner-info">
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-info">
                 <h2>Bienvenido a Consolas<span>Express</span></h2>
                 <br>
                 <p>Consolas Express es tu destino principal para mantenerte actualizado sobre el fascinante mundo de las consolas de videojuegos. Desde análisis detallados hasta noticias emocionantes, ofrecemos contenido fresco y relevante para todos los amantes de los videojuegos. Nuestro equipo de expertos proporciona comparativas, reseñas imparciales y guías útiles, abarcando tanto las consolas clásicas como las últimas generaciones. Únete a nuestra comunidad y descubre todo lo que necesitas saber para aprovechar al máximo tu experiencia de juego en Consolas Express. ¡La aventura comienza aquí!</p>
                 <br>
-                <button>Descubre más</button>
+                <button onclick="window.location.href='#consoles-info-section'">Descubre más</button>
             </div>
-            <div class="banner-img">
+            <div class="hero-image">
                 <img src="img/play5.webp" alt="">
             </div>
-        </div>
-        <div class="container-cards">
+        </section>
+        <section class="featured-cards-section">
             <h2>Juegos Destacados</h2>
             <br>
-            <div class="cards">
+            <div class="cards-container">
                 <div class="card" style="background: url(img/the-last-of-us-parte-ii-remasterizado-202311188242029_2.jpg); background-position: center; background-size: cover; ">
                     <h3>The last of us</h3>
                     <div class="card-info">
@@ -98,11 +98,36 @@
                     </div>
                 </div>
             </div>
-            
-        </div>
+        </section>
+        <section id="consoles-info-section" class="consoles-info-section">
+            <article class="consoles-container">
+                <h2>Descubre mas.</h2>
+                <article class="console">
+                    <div class="img">
+                        <img src="img/play1.png" alt="">
+                    </div>
+                    <h2>Playstation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, excepturi? Eaque dolorum distinctio nesciunt similique facilis optio totam earum numquam! Eius assumenda illum sint sed eveniet quidem soluta delectus corporis!</p>
+                    <button>Mas informacion.</button>
+                </article>
+                <article class="console">
+                    <div class="img">
+                        <img src="img/play1.png" alt="">
+                    </div>                    
+                    <h2>Playstation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, excepturi? Eaque dolorum distinctio nesciunt similique facilis optio totam earum numquam! Eius assumenda illum sint sed eveniet quidem soluta delectus corporis!</p>
+                    <button>Mas informacion.</button>
+                </article>
+                <article class="console">
+                    <div class="img">
+                        <img src="img/play1.png" alt="">
+                    </div>
+                    <h2>Playstation</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, excepturi? Eaque dolorum distinctio nesciunt similique facilis optio totam earum numquam! Eius assumenda illum sint sed eveniet quidem soluta delectus corporis!</p>
+                    <button>Mas informacion.</button>
+                </article>
+            </article>
+        </section>
     </main>
-    <footer>
-        <h2></h2>
-    </footer>
 </body>
 </html>
