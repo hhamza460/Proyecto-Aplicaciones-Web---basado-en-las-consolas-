@@ -338,30 +338,82 @@ body {
 .consoles-info-section {
     position: relative;
     width: 70%;
-    border-radius: 40px 40px 0 0;
+    height: auto;
+    border-radius: 40px 40px 0px 0px;
     box-shadow: 0 3px 100px 0 #8899af;
     margin: 0 auto;
     top: 9em;
 }
 
-.consoles-container {
-    border-radius: 40px;
-}
-
-.consoles-container > h2 {
+.consoles-info-section > h2 {
     position: relative;
     display: flex;
     justify-content: center;
     color: #375bb6;
-    top: 10px;
+    padding: 10px;
 }
 
-.consoles-container > h2::before {
+.consoles-info-section > h2::before {
     position: absolute;
     content: '';
     background-color: #375bb6;
     width: 100%;
     height: 1px;
-    bottom: -10px;
+    bottom: 0;
 }
 
+.consoles-container {
+    position: relative;
+}
+
+.console {
+    position: relative;
+    display: flex;
+    height: auto;
+    border-bottom: 1px solid #375bb6;
+}
+
+.console-img {
+    position: relative;
+    border-right: 1px solid #375bb6;
+    width: 35%;
+    height: 100%;
+}
+
+.console-img img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+}
+
+.console-info {
+    display: grid;
+    position: relative;
+    padding-left: 30px;
+    align-items: center;
+    width: 85%;
+}
+
+.console-info h2, p {
+    top: 10px;
+    width: 85%;
+    color: #375bb6;
+}
+
+.console-info button {
+    width: 140px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #375bb6;
+    color: #375bb6;
+    opacity: .9;
+    transition: 300ms all;
+}
+
+.console-info button:hover {
+    background-color: #375bb6;
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
