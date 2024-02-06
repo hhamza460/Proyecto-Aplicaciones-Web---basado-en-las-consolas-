@@ -236,7 +236,7 @@ body {
 }
 
 .hero-image img{
-    width: 350px;
+    width: 300px;
 }
 
 .featured-cards-section {
@@ -300,7 +300,7 @@ body {
 }
 
 .card-info h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #fff;
     margin: -7px;
 }
@@ -311,7 +311,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 1em;
+    font-size: .9em;
     color: #fff;
 }
 
@@ -326,6 +326,7 @@ body {
 }
 
 .card-info-date p {
+    width: 100%;
     color: #fff;
 }
 
@@ -384,7 +385,7 @@ body {
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    width: 250px;
+    width: 15em;
 }
 
 .console-info {
@@ -416,4 +417,62 @@ body {
     color: #fff;
     opacity: 1;
     cursor: pointer;
+}
+
+@media screen and (max-width:1390px) {
+    .main-header, .hero-section, .featured-cards-section, .consoles-info-section {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .main-header, .hero-section, .featured-cards-section, .consoles-info-section {
+        position: relative;
+        top: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .hero-info {
+        margin: 20px;
+        width: 100%;
+    }
+
+    .hero-info h2,p,button {
+        width: 90%;
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .console {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    .console-info {
+        width: 100%;
+    }
+
+    .console-info h2,p,button{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .console-img {
+        width: 0;
+
+    }
+    .console-img img {
+        display: none;
+    }
 }
