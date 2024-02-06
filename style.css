@@ -110,6 +110,9 @@ body {
     color: #375bb6;
 }
 
+.hamburger {
+    display: none;
+}
 /* SUBMENU -- Consolas */
 
 .submenu {
@@ -434,6 +437,54 @@ body {
     }
 
     .nav-list {
+        position: absolute;
+        display: block;
+        visibility: hidden;
+        width: 100%;
+        background-color: #fff;
+        left: 250%;
+        transform: translate(-50%);
+        top: 4em;
+        right: -400%;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+        transition: 300ms all;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger i {
+        font-size: 25px;
+        color: #375bb6;
+    }
+
+    .hamburger:hover + .nav-list,
+    .nav-list:hover {
+        visibility: visible;
+        top: 4em;
+        left: 50%;
+    }
+
+    .nav-list > li {
+        position: relative;
+        top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .submenu {
+        position: relative;
+        flex-direction: column;
+    }
+
+    .submenu li {
+        margin: 0 auto;
+        border: none;
+    }
+
+    .submenu li a img {
         display: none;
     }
 
