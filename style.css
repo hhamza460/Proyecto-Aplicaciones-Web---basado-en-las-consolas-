@@ -6,7 +6,7 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Comfortaa';
-    cursor: url("img/pointer_1315\ \(1\).png"), auto;
+    cursor: url("/files/img/pointer_1315\ \(1\).png"), auto;
 }
 
 body {
@@ -167,9 +167,7 @@ body {
 /* --------------MAIN - SECTION --------------------*/
 
 .main-content {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
+    position: relative;
 }
 
 .hero-section {
@@ -422,11 +420,56 @@ body {
     cursor: pointer;
 }
 
+
+.footer-container {
+    position: relative;
+    width: 70%;
+    height: auto;
+    top: 9.5em;
+    margin: 0 auto;
+    box-shadow: 0 3px 100px 0 #8899af;
+    display: flex;
+    justify-content: center;
+    background-color: #0a183b;
+    flex-wrap: wrap;
+}
+
+.footer-article {
+    position: relative;
+    width: auto;
+    margin: 20px;
+    width: 300px;  
+}
+
+.footer-article h2 {
+    position: relative;
+    padding: 10px;
+    margin-top: 15px;
+    color: #fff;
+    border-top: 1px solid #fff;
+}
+
+.footer-article a {
+    position: relative;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer-article a:hover {
+    text-decoration: underline;
+}
+
+
 @media screen and (max-width:1390px) {
     .main-header, .hero-section, .featured-cards-section, .consoles-info-section {
         width: 90%;
     }
-}
+
+    .footer-container {
+        width: 90%;
+    }
 
 @media screen and (max-width:860px) {
     .main-header, .hero-section, .featured-cards-section, .consoles-info-section {
@@ -524,4 +567,9 @@ body {
     .console-img img {
         display: none;
     }
-}
+
+    .footer-container {
+        top: auto;
+        width: 100%;
+    }
+}}
