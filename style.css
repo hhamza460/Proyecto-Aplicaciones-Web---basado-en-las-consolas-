@@ -474,7 +474,7 @@ body {
     .footer-container {
         width: 90%;
     }
-
+}
 @media screen and (max-width:860px) {
     .main-header, .hero-section, .featured-cards-section, .consoles-info-section {
         position: relative;
@@ -576,4 +576,4 @@ body {
         top: auto;
         width: 100%;
     }
-}}
+}
