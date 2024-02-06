@@ -280,7 +280,6 @@ body {
 .card h3 {
     position: absolute;
     font-size: 1.1em;
-    bottom: 0;
     color: #ffffff;
     display: flex;
     margin: 1.5em;
@@ -441,6 +440,12 @@ body {
     width: 300px;  
 }
 
+.footer-article:last-child a {
+    display: inline-flex;
+    font-size: 25px;
+    color: #ccd2da;
+}
+
 .footer-article h2 {
     position: relative;
     padding: 10px;
@@ -460,7 +465,6 @@ body {
 .footer-article a:hover {
     text-decoration: underline;
 }
-
 
 @media screen and (max-width:1390px) {
     .main-header, .hero-section, .featured-cards-section, .consoles-info-section {
