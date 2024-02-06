@@ -442,13 +442,11 @@ body {
         visibility: hidden;
         width: 100%;
         background-color: #fff;
-        left: 250%;
+        left: 50%;
         transform: translate(-50%);
-        top: 4em;
-        right: -400%;
         height: auto;
         text-align: center;
-        overflow: hidden;
+        top: 4em;
         transition: 300ms all;
     }
 
@@ -461,8 +459,8 @@ body {
         color: #375bb6;
     }
 
-    .hamburger:focus + .nav-list,
-    .nav-list:focus {
+    .hamburger:hover + .nav-list,
+    .nav-list:hover {
         visibility: visible;
         top: 4em;
         left: 50%;
