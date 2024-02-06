@@ -461,8 +461,8 @@ body {
         color: #375bb6;
     }
 
-    .hamburger:hover + .nav-list,
-    .nav-list:hover {
+    .hamburger:active + .nav-list,
+    .nav-list:active {
         visibility: visible;
         top: 4em;
         left: 50%;
