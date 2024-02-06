@@ -461,8 +461,8 @@ body {
         color: #375bb6;
     }
 
-    .hamburger:active + .nav-list,
-    .nav-list:active {
+    .hamburger:focus + .nav-list,
+    .nav-list:focus {
         visibility: visible;
         top: 4em;
         left: 50%;
