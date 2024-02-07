@@ -37,6 +37,14 @@ body {
     margin-left: 2em;
 }
 
+.main-header .logo-link-mobile {
+    display: none;
+}
+
+.main-header .title-link-mobile {
+    display: none;
+}
+
 .main-header img {
     width: 3em;
 }
@@ -491,6 +499,18 @@ body {
         width: 100%;
     }
 
+    .main-header .logo-link {
+        display: none;
+    }
+
+    .main-header .logo-link-mobile {
+        display: block;
+    }
+    
+    .main-header .title-link-mobile {
+        display: block;
+    }
+
     .nav-list {
         position: absolute;
         display: block;
@@ -511,7 +531,7 @@ body {
 
     .hamburger i {
         font-size: 25px;
-        color: #375bb6;
+        color: #917e65;
     }
 
     .hamburger:hover + .nav-list,
