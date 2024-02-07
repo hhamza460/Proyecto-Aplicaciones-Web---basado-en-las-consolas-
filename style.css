@@ -509,6 +509,12 @@ body {
     
     .main-header .title-link-mobile {
         display: block;
+        font-weight: 600;
+    }
+
+    .main-header .title-link-mobile span {
+        color: #375bb6;
+        font-weight: 600;
     }
 
     .nav-list {
@@ -531,7 +537,7 @@ body {
 
     .hamburger i {
         font-size: 25px;
-        color: #917e65;
+        color: #375bb6;
     }
 
     .hamburger:hover + .nav-list,
