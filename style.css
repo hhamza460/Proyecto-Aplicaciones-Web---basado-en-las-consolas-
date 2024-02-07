@@ -176,6 +176,7 @@ body {
 
 .main-content {
     position: relative;
+    display: grid;
 }
 
 .hero-section {
@@ -188,13 +189,13 @@ body {
     top: 7rem;
     width: 70%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .hero-info {
     width: 50%;
     height: auto;
     display: block;
-
 }
 
 .hero-info h2{

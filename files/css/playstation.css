@@ -1,0 +1,10 @@
+
+
+.hero-info h3,p {
+    color: #000 !important;
+}
+
+.hero-section {
+    background-color: #ffffff !important;
+    box-shadow: 0 3px 100px 0 #8899af;
+}
