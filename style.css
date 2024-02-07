@@ -526,9 +526,14 @@ body {
         left: 50%;
         transform: translate(-50%);
         height: auto;
-        text-align: center;
         top: 4em;
+        text-align: center;
         transition: 300ms all;
+    }
+
+    .nav-list li {
+        position: relative;
+        margin: 0;
     }
 
     .hamburger {
