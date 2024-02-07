@@ -584,5 +584,6 @@ body {
     .footer-container {
         top: auto;
         width: 100%;
+        border-radius: 0;
     }
 }
