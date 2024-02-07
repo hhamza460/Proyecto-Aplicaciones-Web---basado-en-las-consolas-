@@ -394,15 +394,23 @@ body {
     padding-left: 30px;
     align-items: center;
     width: 85%;
+    gap: 15px;
 }
 
-.console-info h2, p {
-    top: 10px;
+.console-info h2{
+    position: relative;
     width: 85%;
     color: #375bb6;
 }
 
+.console-info li {
+    position: relative;
+    width: 90%;
+    color: #375bb6;
+}
+
 .console-info button {
+    position: relative;
     width: 140px;
     height: 40px;
     background-color: transparent;
@@ -431,13 +439,14 @@ body {
     justify-content: center;
     background-color: #0a183b;
     flex-wrap: wrap;
+    border-radius: 0px 0px 40px 40px;
 }
 
 .footer-article {
     position: relative;
     width: auto;
     margin: 20px;
-    width: 300px;  
+    width: 290px;  
 }
 
 .footer-article:last-child a {
