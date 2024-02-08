@@ -1,10 +1,65 @@
+.hero-info h3 {
+    border-bottom: 1px dashed #000;
+}
 
-
-.hero-info h3,p {
+.hero-info p {
     color: #000 !important;
+
+}
+
+.hero-info h2 {
+    color: #375bb6 !important;
+    width: 25%;
+    border-bottom: 2px solid #375bb6;
 }
 
 .hero-section {
     background-color: #ffffff !important;
     box-shadow: 0 3px 100px 0 #8899af;
+}
+
+.table-specs {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    top: 8em;
+    border-radius: 40px;
+    box-shadow: 0 3px 100px 0 #8899af;
+}
+
+.table-specs h2 {
+    position: relative;
+    color: #375bb6;
+    display: flex;
+    justify-content: center;
+    padding: .4em;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+  
+.table, th, td {
+    color: #375bb6;
+    font-size: 13px;
+    border: 1px solid #375bb6;
+
+}
+  
+.table th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+@media screen and (max-width:860px) {
+    .table-specs {
+        position: relative;
+        top: 0;
+        border-radius: 0;
+        width: 100%; /* Se ajusta el ancho de las secciones al 100% */
+    }
 }
