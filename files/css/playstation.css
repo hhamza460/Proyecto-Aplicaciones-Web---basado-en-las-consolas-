@@ -20,17 +20,15 @@
 
 .hero-section {
     background-color: #fff !important;
-    box-shadow: 0 3px 100px 0 #8899af;
 }
 
 .table-specs {
     position: relative;
     width: 70%;
     height: auto;
+    top: 1em;
     margin: 0 auto;
-    top: 7.5em;
-    border-radius: 40px;
-    box-shadow: 0 3px 100px 0 #8899af;
+    background-color: #fff;
 }
 
 .table-specs h2 {
@@ -38,14 +36,13 @@
     color: #375bb6;
     display: flex;
     justify-content: center;
-    padding: .4em;
 }
 
 .table {
     border-collapse: collapse;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 25px;
+    padding-top: 50px;
 }
   
 .table, th, td {
@@ -62,12 +59,11 @@
 
 .trailer-section {
     position: relative;
+    background-color: #fff;
     width: 70%;
     height: auto;
     margin: 0 auto;
-    top: 8em;
-    border-radius: 40px;
-    box-shadow: 0 3px 100px 0 #8899af;
+    top: 1em;
     text-align: center;
 }
 
@@ -85,7 +81,8 @@
 }
 
 .featured-cards-section {
-    margin-top: 10px !important;
+    background-color: #fff !important;
+    box-shadow: none !important;
 }
 
 @media screen and (max-width:1390px) {
