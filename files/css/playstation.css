@@ -1,3 +1,8 @@
+.hero-info h2 {
+    color: #375bb6 !important;
+    text-decoration: underline;
+}
+
 .hero-info h3 {
     border-bottom: 1px dashed #000;
 }
@@ -7,13 +12,14 @@
 
 }
 
-.hero-info h2 {
+.hero-info button {
     color: #375bb6 !important;
-    text-decoration: underline;
+    border: 1px solid #375bb6 !important;
+    margin-top: 1.5em;
 }
 
 .hero-section {
-    background-color: #ffffff !important;
+    background-color: #fff !important;
     box-shadow: 0 3px 100px 0 #8899af;
 }
 
@@ -22,7 +28,7 @@
     width: 70%;
     height: auto;
     margin: 0 auto;
-    top: 8em;
+    top: 7.5em;
     border-radius: 40px;
     box-shadow: 0 3px 100px 0 #8899af;
 }
@@ -54,16 +60,60 @@
     text-align: left;
 }
 
+.trailer-section {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    top: 8em;
+    border-radius: 40px;
+    box-shadow: 0 3px 100px 0 #8899af;
+    text-align: center;
+}
+
+.trailer-section h2 {
+    color: #375bb6;
+    padding: 10px;
+}
+
+.trailer-section iframe {
+    position: relative;
+    padding: 10px;
+    border-radius: 40px;
+    width: 80%;
+    height: 400px;
+}
+
+.featured-cards-section {
+    margin-top: 10px !important;
+}
+
 @media screen and (max-width:1390px) {
     .table-specs { 
         width: 90%; /* Se ajusta el ancho de las secciones al 90% */
     }
+
+    .trailer-section {
+        width: 90%;
+    }
 }
+
 @media screen and (max-width:860px) {
+    .main-content {
+    gap: 0;
+    }
+
     .table-specs {
         position: relative;
         top: 0;
         border-radius: 0;
         width: 100%; /* Se ajusta el ancho de las secciones al 100% */
+    }
+
+    .trailer-section {
+        position: relative;
+        top: 0;
+        border-radius: 0;
+        width: 100%;
     }
 }

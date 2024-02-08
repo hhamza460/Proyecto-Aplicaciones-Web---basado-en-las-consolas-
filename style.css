@@ -358,6 +358,9 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: .9em;
+    height: 50%;
+    overflow-y: scroll;
+    scrollbar-width: none;
     color: #fff;
 }
 
