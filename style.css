@@ -8,7 +8,7 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Comfortaa'; /* Se aplica la fuente Comfortaa a todos los elementos */
-    cursor: url("/files/img/pointer_1315\ \(1\).png"), auto; /* Se utiliza una imagen personalizada como cursor */
+    cursor: url("/files/img/pagina-inicio-imagenes/pointer_1315\ \(1\).png"), auto; /* Se utiliza una imagen personalizada como cursor */
 }
 
 /* Estilos para el cuerpo del documento */
