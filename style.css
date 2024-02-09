@@ -158,8 +158,8 @@ body {
     display: flex;
     align-items: center;
     width: 30vw; 
-    height: 30vh;
-    margin: 0;
+    height: 20vh;
+    margin: 0 auto;
     border-left: 1px 0px 0px 0px solid #375bb6;
     border-radius: 2vw; 
     transition: 300ms all;
@@ -178,9 +178,9 @@ body {
 
 /* Estilos para las imágenes dentro de los elementos del submenu */
 .submenu li a img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    height: 15vh;
+    height: 10vh;
 }
 
 /* Estilos para los textos dentro de los elementos del submenu */
@@ -192,7 +192,7 @@ body {
 
 /* Estilos para mostrar el submenu al hacer foco en el primer enlace de la lista de navegación */
 .nav-list li a:first-child:focus ~ .submenu {
-    height: 30vh;
+    height: 20vh;
 }
 
 /* Estilos para la sección principal del contenido */
