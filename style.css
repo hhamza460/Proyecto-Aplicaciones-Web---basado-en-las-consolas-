@@ -607,7 +607,6 @@ body {
     .hamburger:hover + .nav-list,
     .nav-list:hover {
         visibility: visible;
-        top: 4em;
         left: 50%;
     }
 
@@ -620,11 +619,22 @@ body {
     .submenu {
         position: relative;
         flex-direction: column;
+        overflow: hidden;
     }
 
     .submenu li {
+        position: relative;
         margin: 0 auto;
         border: none;
+        margin-bottom: 20px;
+    }
+
+    .submenu li a {
+        position: relative;
+    }
+
+    .submenu li:hover {
+        background-color: transparent;
     }
 
     .submenu li a img {
