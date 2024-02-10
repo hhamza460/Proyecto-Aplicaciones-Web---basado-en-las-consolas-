@@ -357,6 +357,8 @@ body {
     font-size: .9em;
     height: 50%;
     color: #fff;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
 /* Estilos para la información de la fecha en las tarjetas */
@@ -626,7 +628,7 @@ body {
         position: relative;
         margin: 0 auto;
         border: none;
-        margin-bottom: 20px;
+        height: 30px;
     }
 
     .submenu li a {
