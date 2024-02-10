@@ -23,7 +23,7 @@ body {
     position: relative;
     padding: 10px;
     background-color: #fff; /* Color de fondo del encabezado */
-    width: 70.1%; /* Ancho del encabezado */
+    width: 70%; /* Ancho del encabezado */
     border-radius: 1.5em 1.5em 0em 0em; /* Borde redondeado */
     display: flex;
     top: 1em;
@@ -198,6 +198,8 @@ body {
 /* Estilos para la sección principal del contenido */
 .main-content {
     position: relative;
+    width: 100%;
+    height: auto;
 }
 
 /* Estilos para la sección hero */
@@ -347,15 +349,13 @@ body {
 
 /* Estilos para los párrafos en la información de las tarjetas */
 .card-info > p{
-    position: absolute;
+    position: absolute;  
     width: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: .9em;
     height: 50%;
-    overflow-y: scroll;
-    scrollbar-width: none;
     color: #fff;
 }
 
