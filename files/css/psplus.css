@@ -1,0 +1,174 @@
+.main-header {
+    box-shadow: none;
+}
+
+.logo-link img {
+    width: 150px;
+}
+
+.nav-list li a {
+    color: #000;
+}
+
+.nav-list li a::after {
+    background-color: #000;
+}
+
+.search-bar input:hover::placeholder {
+    color: #000;
+}
+
+.search-bar button i {
+    color: #000;
+}
+
+.hero-section {
+    background-color: #fff;
+}
+
+.hero-info {
+    width: 55%;
+}
+
+.hero-info h2{
+    color: #000;
+}
+
+.hero-info p {
+    color: #000;
+    font-size: .8em;
+}
+
+.hero-info ul {
+    position: relative;
+    left: 2em;
+}
+
+.hero-info ul li {
+    font-size: .8em;
+    margin-bottom: 5px;
+}
+
+.psplus-plans-section {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    top: 1em;
+    background: #fff;
+    border-top: 1px solid #000;
+}
+
+.psplus-plans-section h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: 300;
+}
+
+.psplus-cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.psplus-card {
+    width: 400px;
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 8px 20px 0 #00000023;
+}
+
+.card-header {
+    position: relative;
+    padding: 1em;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-header h3 {
+    position: relative;
+    font-family: 'Arial';
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+.card-main {
+    position: relative;
+    left: 5%;
+}
+
+.card-main li {
+    position: relative;
+    font-size: .8em;
+    list-style: none;
+    width: 90%;
+    padding: .6em;
+    border-bottom: 1px solid #000;
+}
+
+.card-main li i {
+    padding: 5px;
+}
+
+.one-month {
+    position: relative;
+    display: grid;
+    justify-content: center;
+}
+
+.one-month h3 {
+    padding: 5px;
+    font-size: 26px;
+    font-weight: 200;
+}
+
+.one-month p {
+    display: flex;
+    justify-content: center;
+}
+
+.months {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.psplus-card:nth-child(2) .card-header {
+    background-color: #fcc000;
+}
+
+.psplus-card:nth-child(3) .card-header {
+    color: #fcc000;
+    background-color: #000;
+}
+
+
+@media screen and (max-width:1390px) {
+    .psplus-plans-section {
+        width: 90%; /* Se ajusta el ancho de las secciones al 90% */
+    }
+
+    .footer-container {
+        width: 90%; /* Se ajusta el ancho del pie de página al 90% */
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 860px */
+@media screen and (max-width:860px) {
+    .psplus-plans-section {
+        position: relative;
+        top: 0;
+        border-radius: 0;
+        width: 100%; /* Se ajusta el ancho de las secciones al 100% */
+    }
+}
