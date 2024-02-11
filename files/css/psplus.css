@@ -1,54 +1,67 @@
+/* Elimina la sombra de la cabecera principal */
 .main-header {
     box-shadow: none;
 }
 
+/* Establece un ancho específico para el logotipo */
 .logo-link img {
     width: 150px;
 }
 
+/* Color del texto del menú de navegación */
 .nav-list li a {
     color: #000;
 }
 
+/* Color del pseudo-elemento ::after en los enlaces del menú de navegación */
 .nav-list li a::after {
     background-color: #000;
 }
 
+/* Color del texto del marcador de posición en el formulario de búsqueda al pasar el cursor sobre él */
 .search-bar input:hover::placeholder {
     color: #000;
 }
 
+/* Color del icono del botón de búsqueda */
 .search-bar button i {
     color: #000;
 }
 
+/* Estilo de la sección del héroe */
 .hero-section {
     background-color: #fff;
 }
 
+/* Estilos para la información del héroe */
 .hero-info {
     width: 55%;
 }
 
+/* Color del título en la información del héroe */
 .hero-info h2{
     color: #000;
 }
 
+/* Color del texto en la información del héroe */
 .hero-info p {
     color: #000;
     font-size: .8em;
 }
 
+/* Ajustes para la lista en la información del héroe */
 .hero-info ul {
     position: relative;
     left: 2em;
 }
 
+/* Estilos para los elementos de la lista en la información del héroe */
 .hero-info ul li {
     font-size: .8em;
     margin-bottom: 5px;
 }
 
+/* Estilos para la sección de planes de Playstation Plus */
 .psplus-plans-section {
     position: relative;
     width: 70%;
@@ -59,6 +72,7 @@
     border-top: 1px solid #000;
 }
 
+/* Estilos para el título de la sección de planes de Playstation Plus */
 .psplus-plans-section h2 {
     position: relative;
     display: flex;
@@ -67,6 +81,7 @@
     font-weight: 300;
 }
 
+/* Estilos para el contenedor de las tarjetas de Playstation Plus */
 .psplus-cards {
     position: relative;
     display: flex;
@@ -77,6 +92,7 @@
     flex-wrap: wrap;
 }
 
+/* Estilos para cada tarjeta de Playstation Plus */
 .psplus-card {
     width: 400px;
     background-color: #fff; 
@@ -84,6 +100,7 @@
     box-shadow: 0 8px 20px 0 #00000023;
 }
 
+/* Estilos para la cabecera de cada tarjeta */
 .card-header {
     position: relative;
     padding: 1em;
@@ -92,6 +109,7 @@
     border-radius: 10px 10px 0px 0px;
 }
 
+/* Estilos para el título de la cabecera de cada tarjeta */
 .card-header h3 {
     position: relative;
     font-family: 'Arial';
@@ -101,11 +119,13 @@
     letter-spacing: 3px;
 }
 
+/* Estilos para el contenido principal de cada tarjeta */
 .card-main {
     position: relative;
     left: 5%;
 }
 
+/* Estilos para los elementos de la lista dentro de cada tarjeta */
 .card-main li {
     position: relative;
     font-size: .8em;
@@ -115,27 +135,32 @@
     border-bottom: 1px solid #000;
 }
 
+/* Estilos para los iconos de la lista dentro de cada tarjeta */
 .card-main li i {
     padding: 5px;
 }
 
+/* Estilos para el contenedor de precio de 1 mes */
 .one-month {
     position: relative;
     display: grid;
     justify-content: center;
 }
 
+/* Estilos para el precio de 1 mes */
 .one-month h3 {
     padding: 5px;
     font-size: 26px;
     font-weight: 200;
 }
 
+/* Estilos para el párrafo de precio de 1 mes */
 .one-month p {
     display: flex;
     justify-content: center;
 }
 
+/* Estilos para el contenedor de precios de varios meses */
 .months {
     position: relative;
     display: flex;
@@ -143,32 +168,86 @@
     padding: 10px;
 }
 
+/* Estilos para la cabecera de la segunda tarjeta */
 .psplus-card:nth-child(2) .card-header {
     background-color: #fcc000;
 }
 
+/* Estilos para la cabecera de la tercera tarjeta */
 .psplus-card:nth-child(3) .card-header {
     color: #fcc000;
     background-color: #000;
 }
 
+/* Estilos para la sección de tendencias de Playstation Plus */
+.psplus-trends {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    top: 1em;
+    background: #fff;
+    border-top: 1px solid #000;
+}
 
+/* Estilos para el título de la sección de tendencias de Playstation Plus */
+.psplus-trends h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-weight: 300;
+}
+
+/* Estilos para el contenedor de las imágenes de tendencias */
+.trends {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+/* Estilos para las imágenes de tendencias */
+.trends img {
+    width: 20vw;
+    padding: 20px;
+    border-radius: 50px;
+    transition: 300ms all;
+}
+
+/* Efecto de escala al pasar el cursor sobre las imágenes de tendencias */
+.trends img:hover {
+    transform: scale(1.1);
+}
+
+/* Media query para pantallas con un ancho máximo de 1390px */
 @media screen and (max-width:1390px) {
-    .psplus-plans-section {
-        width: 90%; /* Se ajusta el ancho de las secciones al 90% */
+    /* Ajusta el ancho de las secciones al 90% */
+    .psplus-plans-section, .footer-container, .psplus-trends {
+        width: 90%;
     }
 
+    /* Ajusta el ancho del pie de página al 90% */
     .footer-container {
-        width: 90%; /* Se ajusta el ancho del pie de página al 90% */
+        width: 90%;
     }
 }
 
 /* Media query para pantallas con un ancho máximo de 860px */
 @media screen and (max-width:860px) {
-    .psplus-plans-section {
+    /* Ajusta el ancho de la información del héroe al 90% y ajusta el margen */
+    .hero-info {
+        width: 90%;
+        margin: -10px;
+    }
+    
+    /* Ajusta el ancho de las secciones al 100% */
+    .psplus-plans-section, .footer-container, .psplus-trends {
         position: relative;
         top: 0;
         border-radius: 0;
-        width: 100%; /* Se ajusta el ancho de las secciones al 100% */
+        width: 100%;
     }
 }
