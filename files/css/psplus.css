@@ -250,4 +250,8 @@
         border-radius: 0;
         width: 100%;
     }
+
+    .trends img {
+        width: 70%;
+    }
 }
