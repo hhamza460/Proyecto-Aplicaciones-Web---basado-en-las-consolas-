@@ -346,6 +346,10 @@ details[open] p {
         width: 100%;
     }
 
+    .trend {
+        scrollbar-width: none;
+    }
+
     .trends img {
         width: 70%;
     }
