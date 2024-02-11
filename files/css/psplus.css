@@ -206,7 +206,19 @@
     align-items: center;
     overflow-x: scroll;
     overflow-y: hidden;
-    scrollbar-width: none;
+}
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 3px; 
+    height: 10px;
+    background-color: #fff; 
+}
+
+/* Estilo para el thumb (el deslizador) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background-color: #e6e4e4; 
+    border-radius: 10px;  
 }
 
 /* Estilos para las imágenes de tendencias */
