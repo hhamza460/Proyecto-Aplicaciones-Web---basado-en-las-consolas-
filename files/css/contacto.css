@@ -1,0 +1,53 @@
+.main-header {
+    box-shadow: none;
+}
+
+.contact-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    top: 1em;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.side-info {
+    position: relative;
+    text-align: center;
+    border-right: 2px solid #375bb6;
+    display: grid;
+    padding: 2em;
+}
+
+.info {
+    border-right: 1px solid #fff;
+}
+
+.info i, .info h3, .info p {
+    color: #375bb6;
+    margin-top: 1.1em;
+}
+
+.info i {
+    font-size: 1.9em;
+}
+
+.contact-form {
+    display: grid;
+    position: relative;
+    padding: 2em;
+}
+
+.contact-form h3 {
+    color: #375bb6;
+}
