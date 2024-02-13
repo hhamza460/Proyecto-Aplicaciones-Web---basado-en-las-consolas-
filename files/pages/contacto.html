@@ -66,10 +66,18 @@
                 <div class="contact-form">
                     <h3>Formulario de Contacto</h3>
                     <form action="#">
-                        <input type="text" maxlength="50" placeholder="Tu nombre" required>
-                        <input type="email" maxlength="50" placeholder="Tu correo" required>
-                        <input type="text"  placeholder="Escribe tu mensaje" required>
-                        <button type="submit">Enviar.</button>
+                        <div class="name">
+                            <i class="fa-regular fa-user"></i><input type="text" maxlength="50" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="email">
+                            <i class="fa-regular fa-envelope"></i><input type="email" maxlength="50" placeholder="Tu correo" required>
+                        </div>
+                        <div class="message">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="contact-form-btn">
+                            <button type="submit"><i class="fa-regular fa-paper-plane"></i>Enviar.</button>
+                        </div>
                     </form>
                 </div>
             </div>

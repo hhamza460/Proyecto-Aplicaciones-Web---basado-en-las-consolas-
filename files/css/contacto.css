@@ -19,14 +19,17 @@
     align-items: center;
     justify-content: center;
     height: auto;
+    width: 100%;
+    flex-wrap: wrap-reverse;
 }
 
 .side-info {
     position: relative;
     text-align: center;
+    height: 60vh;
     border-right: 2px solid #375bb6;
-    display: grid;
-    padding: 2em;
+    display: block;
+    width: 600px;
 }
 
 .info {
@@ -46,8 +49,90 @@
     display: grid;
     position: relative;
     padding: 2em;
+    width: 70%;
+    width: 450px;
 }
 
 .contact-form h3 {
     color: #375bb6;
+}
+
+.contact-form form div{
+    margin-top: 2em;
+}
+
+.name, .email {
+    background-color: #fff;
+    border: 1px solid #375bb6;
+    width: 400px;
+    border-radius: 30px;
+    height: 3em;
+}
+
+.name input, .email input {
+    width: 90%;
+    float: right;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.name input::placeholder, .email input::placeholder {
+    color: #375bb6;
+}
+
+.name input::placeholder:focus, .email input::placeholder:focus {
+    display: none;
+    background-color: aqua;
+}
+
+.name i, .email i {
+    position: relative;
+    left: 5%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #375bb6;
+    font-size: 20px;
+}
+
+.message {
+    width: 100%;
+    border-radius: 30px;
+    background-color: antiquewhite;
+}
+
+.message textarea {
+    resize: none;
+}
+
+@media screen and (max-width:1390px) {
+    .contact-section {
+        width: 90%; /* Se ajusta el ancho de las secciones al 90% */
+    }
+
+    .footer-container {
+        width: 90%; /* Se ajusta el ancho del pie de página al 90% */
+    }
+}
+
+@media screen and (max-width:1237px) {
+    .side-info {
+        border-right: none;
+        border-top: 2px solid #375bb6;
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 860px */
+@media screen and (max-width:860px) {
+    .contact-section {
+        position: relative;
+        top: 0;
+        border-radius: 0;
+        width: 100%; /* Se ajusta el ancho de las secciones al 100% */
+    }
+
+    .footer-container {
+        width: 100%;
+    }
 }
